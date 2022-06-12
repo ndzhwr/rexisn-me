@@ -9,9 +9,14 @@
     src: url('../font/DMSans-Regular.ttf');
     font-weight: normal;
 }
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../font/JetBrainsMono-Regular.ttf');
+    font-weight: normal;
+}
 
 *{
-    font-family: DMSans ,sans-serif;
+    font-family: 'JetBrains Mono' , DMSans ,sans-serif;
 
 }
 
