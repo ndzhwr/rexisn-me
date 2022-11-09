@@ -1,40 +1,55 @@
 ---
 import Link from "../components/Link.astro";
 import Footer from "../components/Footer.astro";
-import Logo from '../public/logo.svg'
-import '../styles/globals.css';
+import "../styles/globals.css";
 import Metadata from "../components/Metadata.astro";
-
+import Header from "../components/Header.astro";
 ---
+
 <!DOCTYPE html>
 <html>
-    <Metadata />    
-    <body class=" msm:px-10 md:px-40 py-10">
-        <img src={ Logo } class="w-10 h-10 mx-auto opacity-10 fill-gray-100"/> 
-        <div class=" h-6 msm:px-10 md:px-64 py-20 ">
-            <h1 class="text-4xl font-bold text-neutral-800">Regis NDIZIHIWE </h1>
-            <div class="desc  text-neutral-600">
-                <p class="my-4">
-                    Hey! I'm Regis, A passionate developer
-                    based in Rwanda, fetching software development skills at 
-                    <Link  link="https://rca.ac.rw" title="Rwanda coding academy"/> and other worldwide coding camps. 
-                </p>
-                <p class="my-4">
-                    I've been buiding various web applications with modern web development frameworks and Libraries like Next.js, Nuxt.js and Astrojs all with Typescript.
-                    Some of those projects can be found in the <Link link="#" title="projects"/> section or  visit my <Link link="https://github.com/ndzhwr" title="GitHub"/>  to see  my codes.
-                </p>
-                <p class="my-4">
-                    Outside the world of programming, I enjoy listening to  music and building artistic things mostly paper-works and others.
-                </p>
-                <p class="my-4">
-                    You can send me a hi with <Link link="mailto:ndizihiweregis06@gmail.com" title="Email" /> , 
-                    see more of my work on my <Link link="https://github.com/ndzhwr" title="GitHub"/> or chit-chat with me on <Link link="https://twitter.com/ndizihiwe_r" title="Twitter" />
-                </p> 
-                <p class="my-8">
-                    Good vybes!
-                </p> 
-                <Footer />
-            </div>
+<Metadata />
+<body>
+    <Header />
+    <div  class="msm:px-10 md:px-40">
+    <div class="h-6 msm:px-10 md:px-52 py-20">
+        <h1 class="text-4xl font-bold text-neutral-800">Regis NDIZIHIWE</h1>
+        <div class="desc text-neutral-600">
+        <p class="my-4">
+            Hey! I'm Regis, A passionate developer based in Rwanda, fetching
+            software development skills at
+            <Link link="https://rca.ac.rw" title="Rwanda coding academy" /> and other
+            worldwide coding camps.
+        </p>
+        <p class="my-4">
+            I've been buiding various web applications with modern web
+            development frameworks and Libraries like Next.js, Nuxt.js and
+            Astrojs all with Typescript. Some of those projects can be found in
+            the <Link link="#" title="projects" /> section or visit my <Link
+            link="https://github.com/ndzhwr"
+            title="GitHub"
+            /> to see my codes.
+        </p>
+        <p class="my-4">
+            Outside the world of programming, I enjoy listening to music and
+            building artistic things mostly paper-works and others.
+        </p>
+        <p class="my-4">
+            You can send me a hi with <Link
+                link="mailto:ndizihiweregis06@gmail.com"
+                title="Email"
+            /> , see more of my work on my <Link
+                link="https://github.com/ndzhwr"
+                title="GitHub"
+            /> or chit-chat with me on <Link
+                link="https://twitter.com/ndizihiwe_r"
+                title="Twitter"
+            />
+        </p>
+        <p class="my-8">Good vybes!</p>
+        <Footer />
         </div>
-    </body>
+    </div>
+    </div>
+</body>
 </html>

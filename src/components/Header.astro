@@ -1,19 +1,27 @@
 ---
-import Logo from '../public/logo.svg'
+import Logo from "../public/logo.svg";
+import GithubIcon from '../assets/github.svg'
+import TwitterIcon from '../assets/twitter.svg'
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<body>
-    <nav class="flex  gap-20 items-center ">
 
-        <img src={Logo} alt="" class="w-16 h-16 hover:opacity-75">
-        <div class="flex justify-between align-center gap-4 text-sm  text-neutral-700 " >
-            <a href="#" class="px-4 hover:opacity-75">Home</a>
-            <a href="#" class="px-4 hover:opacity-75">Projects</a>
-            <a href="#" class="px-4 hover:opacity-75"> Blog</a>
-            <a href="#" class="px-4 hover:opacity-75"> Contact</a>
-        </div>
-    </nav>
-</body>
-</html>
+<nav
+    class="flex gap-20 items-center justify-between border-b border-gray-100 py-6 msm:mx-10 md:mx-40"
+>
+<div
+class="flex gap-20 items-center "
+>
+
+    <img src={Logo} alt="" class="w-10 h-10 hover:opacity-75" />
+    <div class="flex justify-between align-center gap-4 text-sm text-neutral-700">
+        <a href="/" class="px-4 hover:opacity-75">Home</a>
+        <a href="/projects" class="px-4 hover:opacity-75">Projects</a>
+        <a href="#" class="px-4 hover:opacity-75">Blog</a>
+    </div>
+</div>
+    <div class="social_media flex items-center gap-4">
+        <a  target="_blank" href="https://github.com/ndzhwr"><img src={GithubIcon} class="w-5 hover:opacity-75 h-10 fill-neutral-800" /></a>
+        <a  target="_blank" href="https://twitter.com/ndzhwr"><img src={TwitterIcon} class="w-5 hover:opacity-75 h-10 fill-neutral-800" /></a>
+ 
+    </div>
+</nav>

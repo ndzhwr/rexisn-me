@@ -1,0 +1,26 @@
+---
+import Logo from "../public/logo.svg";
+import Footer from "./Footer.astro";
+
+const { projectIcon, projectName, projectDesc, projectLink } = Astro.props;
+---
+
+<a href={ projectLink ? projectLink : '#'}>
+    <div
+    class="project mb-4 flex gap-6 p-4 rounded-md hover:bg-gray-50 cursor-pointer w-fit"
+    >
+    <div
+    class="border w-20 h-20 rounded-md border-gray-50 bg-gray-50 flex items-center justify-between"
+    >
+    <img src={projectIcon ? projectIcon : Logo} class="w-8 h-8 mx-auto" />
+</div>
+<div class="w-64">
+    <h1 class="text-md text-neutral-700 font-bold">{ projectName ? projectName : 'Awesome project' }</h1>
+    <p class="text-neutral-600 text-sm">
+        {
+            projectDesc ? projectDesc : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.'
+        }
+    </p>
+</div>
+</div>
+</a>
