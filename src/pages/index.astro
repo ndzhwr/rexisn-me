@@ -3,14 +3,12 @@ import Link from "../components/Link.astro";
 import Footer from "../components/Footer.astro";
 import Logo from '../public/logo.svg'
 import '../styles/globals.css';
+import Metadata from "../components/Metadata.astro";
 
 ---
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Regis NDIZIHIWE</title>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    </head>
+    <Metadata />    
     <body class=" msm:px-10 md:px-40 py-10">
         <img src={ Logo } class="w-10 h-10 mx-auto opacity-10 fill-gray-100"/> 
         <div class=" h-6 msm:px-10 md:px-64 py-20 ">
