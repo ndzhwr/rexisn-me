@@ -5,30 +5,44 @@ import "../styles/globals.css";
 import Metadata from "../components/Metadata.astro";
 import Header from "../components/Header.astro";
 
+let show = false;
+setInterval(() => {
+setTimeout(() => {
+    show = !show
+  }), 1000;
+}, 1000);
 ---
 
 <!DOCTYPE html>
-<html>
+<div>
   <Metadata />
-  <body class="bg-[rgb(15,15,15)] mb-20">
-    <div class="">
-      <div class="mt-12 md:w-[700px]  sm:w-[400px] msm:w-full mx-auto py-20">
-        <h1 class="text-4xl font-bold text-white mt-20">R&eacute;gis _ </h1>
-        <div class="desc text-neutral-100">
+  <body class="bg-neutral-50 mb-20">
+    <Header />
+    <div>
+      <div class="mt-10 px-[30vw] msm:w-full mx-auto py-20">
+        <h1 class="text-4xl font-bold text-slate-900 mt-20">
+          R&eacute;gis {show && "_"}
+        </h1>
+        <div class="desc text-slate-500">
           <p class="my-4">
-            Hey &#x270B;, I'm R&eacute;gis NDIZIHIWE, a developer and a cool-designs fan.
+            Hey &#x270B;, I'm R&eacute;gis NDIZIHIWE, a developer and a designer
+            based in Musanze, Rwanda. Most of the times I code in Typescript and
+            design with Figma
           </p>
           <p class="my-4">
             You can send me a hi with <Link
               link="mailto:ndizihiweregis06@gmail.com"
               title="email"
-            />, have a look on cool designs on <Link link="https://behance.net/nregis" title="behance"/>,go through my codes on <Link
+            />, have a look on my designs on <Link
+              link="https://behance.net/nregis"
+              title="behance"
+            />,go through my codes on <Link
               link="https://github.com/ndzhwr"
               title="github"
             /> or chit-chat with me on <Link
               link="https://twitter.com/ndizihiwe_r"
               title="twitter"
-            />
+            />.
           </p>
           <p class="my-8">Good vybes!</p>
           <Footer />
@@ -36,4 +50,4 @@ import Header from "../components/Header.astro";
       </div>
     </div>
   </body>
-</html>
+</div>
